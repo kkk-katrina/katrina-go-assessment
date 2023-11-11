@@ -39,7 +39,7 @@ func FetchAllFoldersByOrgID(orgID uuid.UUID) ([]*Folder, error) {
 The original implementation of these two functions overlooked potential errors and did not adequately address certain edge cases. To enhance their robustness and efficiency, I've refined the code by streamlining its structure and incorporating checks for edge cases. These improvements are also reflected in the test file, ensuring that the functions are now better equipped to handle a variety of scenarios with greater reliability.
 
 ## Component 2
-"To implement a cursor based pagination, I followed the steps below:
+To implement a cursor based pagination, I followed the steps below:
 
 1. Designed a pagination function to break the dataset into smaller chunks.
 2. Used Base64 encoding on the ID of the last data item of each chunk to generate a token.
